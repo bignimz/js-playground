@@ -1,0 +1,323 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+#scroll {
+    background-color: navy;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    width: 100%;
+    opacity: 0;
+}
+
+.spacer {
+    height: 100px;
+}
+
+
+/* Pricing Block Styles */
+
+.pricing_block {
+    width: 100%;
+    margin: 0 auto;
+    padding: 120px 194px;
+    background-color: #F5F5F5;
+}
+
+.pricing_block_header {
+    width: 100%;
+    max-width: 978px;
+    margin: 0 auto;
+}
+
+.pricing_block_contents {
+    width: 100%;
+    max-width: 978px;
+    margin: 0 auto;
+    display: flex;
+    gap: 32px;
+}
+
+.current_rates {
+    font-size: 12px;
+    color: #77787A;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+.current_price {
+    font-size: 50px;
+    color: #171C8F;
+    margin-bottom: 28px;
+}
+
+.pbc_left_header {
+    font-size: 16px;
+    color: #363636;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.pbc_price_range {
+    font-size: 12px;
+    color: #363636;
+    text-transform: uppercase;
+}
+
+.pbc_rate {
+    color: #77787A;
+    margin-bottom: 40px;
+}
+
+.pbc_rate span {
+    color: #77787A;
+}
+
+.pbc_left_header .pbc_price_tag {
+    color: #171C8F;
+    font-size: 35px;
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+.pbc_price_details {
+    font-size: 16px;
+    color: #77787A;
+    margin-bottom: 39px;
+    letter-spacing: 0.8px;
+    line-height: 26px;
+}
+
+.pbc_button {
+    font-size: 18px;
+    color: #fff;
+    background-color: #171C8F;
+    padding: 20px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-style: none;
+}
+
+.pbc_button:hover {
+    background-color: #fff;
+    color: #171C8F;
+    border: 1px solid #171C8F;
+    text-decoration: none;
+    font-style: none;
+}
+
+.pbc_include {
+    font-size: 16px;
+    color: #363636;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.pbc_include_details {
+    font-size: 16px;
+    color: #77787A;
+    margin-bottom: 15px;   
+    letter-spacing: 0.8px;
+    line-height: 26px;
+}
+
+.pbc_exclude {
+    font-size: 16px;
+    color: #363636;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.pbc_exclude_details {
+    font-size: 16px;
+    color: #77787A;
+    margin-bottom: 15px;
+    letter-spacing: 0.8px;
+    line-height: 26px;
+}
+
+.pbc_button.mobile {
+    display: none;
+}
+
+.asterix {
+    font-size: 20px;
+    color: #363636;
+}
+
+@media (max-width: 1207px) {
+    .pricing_block {
+        padding: 60px 20px;
+    }
+
+    .current_rates {
+        margin-bottom: 0px;
+    }
+
+    .pbc_button {
+        display: none;
+    }
+
+    .pbc_button.mobile {
+        display: block;
+        margin: 0 auto;
+        font-size: 16px;
+    }
+
+    .pbc_left_header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .pbc_left_header .pbc_price_tag {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .pbc_price_details {
+        margin-bottom: 30px;
+    }
+
+    .pbc_include,
+    .pbc_exclude {
+        margin-bottom: 0px;
+    }
+
+    .pbc_include_details,
+    .pbc_exclude_details {
+        margin-bottom: 30px;
+    }
+
+    .pricing_block_contents {
+        flex-direction: column;
+        text-align: left;
+        gap: 0px;
+    }
+
+    .pbc_price_range {
+        margin-bottom: 5px;
+        color: #363636;
+        text-transform: capitalize;
+        font-size: 16px;
+    }
+
+    .pbc_price_range span {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .pbc_button {
+        width: 260px;
+        max-width: 100%;
+        margin: 0 auto;
+        font-size: 16px;
+    }
+}
+
+/* Pricing Block Styles End */
+
+
+/* Tented Suites Component */
+.border_line {
+    width: 100%;
+    max-width: 877px;
+    height: 1px;
+    background-color: #77787A;
+    margin-bottom: 32px;
+    position: relative;
+    left: 350px;
+}
+
+.tented_suites_component {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    display: none;
+}
+
+.tsc_heading {
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+.tsc_beds {
+    display: flex;
+    gap: 71px;
+    margin-bottom: 50px;
+}
+
+.tsc_beds_heading {
+    font-size: 24px;
+    letter-spacing: 0.84px;
+    line-height: 27px;
+    color: #363636;
+}
+
+.tsc_beds_package {
+    width: 100%;
+    max-width: 114px;
+    display: block;
+
+}
+
+.tsc_beds_left {
+    width: 232px;
+    max-width: 100%;
+}
+
+.tsc_beds_right {
+    display: flex;
+    gap: 80px;
+}
+
+.tsc_title {
+    width: 30%;
+}
+
+/* .beds_package {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+.beds_images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 29px;
+}
+
+.beds_package img {
+    margin-right: 20px;
+}
+
+.beds_package .double_bed {
+    width: 40px;
+    height: 30px;
+}
+
+.beds_package .single_bed {
+    width: 40px;
+    height: 30px;
+}
+
+.beds_package_details {
+    color: #77787A;
+    font-size: 12px;
+}
+
+/* Amenities Row */
+.tsc_amenities_right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.amenity_type {
+    width: 271px;
+}
