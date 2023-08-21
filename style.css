@@ -22,20 +22,18 @@ body{
 /* Pricing Block Styles */
 
 .pricing_block {
-    width: 100%;
-    margin: 0 auto;
+    max-width: 100%;
     padding: 120px 194px;
     background-color: #F5F5F5;
+    /* display: none; */
 }
 
 .pricing_block_header {
-    width: 100%;
     max-width: 978px;
     margin: 0 auto;
 }
 
 .pricing_block_contents {
-    width: 100%;
     max-width: 978px;
     margin: 0 auto;
     display: flex;
@@ -152,7 +150,12 @@ body{
 
 @media (max-width: 1207px) {
     .pricing_block {
+        max-width: 100%;
+        position: relative;
+        justify-content: center;
+        align-items: center;
         padding: 60px 20px;
+        /* display: none; */
     }
 
     .current_rates {
@@ -196,7 +199,7 @@ body{
     .pricing_block_contents {
         flex-direction: column;
         text-align: left;
-        gap: 0px;
+        padding: 0 20px;
     }
 
     .pbc_price_range {
@@ -212,8 +215,7 @@ body{
     }
 
     .pbc_button {
-        width: 260px;
-        max-width: 100%;
+        max-width: 260px;
         margin: 0 auto;
         font-size: 16px;
     }
@@ -224,7 +226,6 @@ body{
 
 /* Tented Suites Component */
 .border_line {
-    width: 100%;
     max-width: 877px;
     height: 1px;
     background-color: #77787A;
@@ -234,28 +235,35 @@ body{
 }
 
 .tented_suites_component {
-    width: 100%;
     max-width: 1180px;
     margin: 0 auto;
-    display: none;
+    /* display: none; */
 }
 
 .tsc_heading {
-    margin-left: 100px;
     margin-bottom: 50px;
 }
 
 .tsc_beds {
-    display: flex;
-    gap: 71px;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr 3fr;
     margin-bottom: 50px;
 }
 
-.tsc_beds_heading {
+.tsc_beds_right {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
+    border-bottom: 1px solid #77787A;
+    padding-bottom: 30px;
+}
+
+.tsc_heading {
     font-size: 24px;
     letter-spacing: 0.84px;
     line-height: 27px;
     color: #363636;
+    max-width: 232px;
 }
 
 .tsc_beds_package {
@@ -270,19 +278,8 @@ body{
     max-width: 100%;
 }
 
-.tsc_beds_right {
-    display: flex;
-    gap: 80px;
-}
-
-.tsc_title {
+/* .tsc_title {
     width: 30%;
-}
-
-/* .beds_package {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 } */
 
 .beds_images {
@@ -312,12 +309,54 @@ body{
 }
 
 /* Amenities Row */
+.tsc_amenities {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 32px;
+    margin-bottom: 50px;
+}
 .tsc_amenities_right {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
+    column-gap: 32px;
+    color: #77787A;
+    border-bottom: 1px solid #77787A;
+    padding-bottom: 30px;
 }
 
 .amenity_type {
-    width: 271px;
+    max-width: 260px;
+}
+
+@media (max-width: 1365px) {
+    /* Beds */
+    .tsc_beds {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .tsc_beds_right {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+        gap: 54px 80px;
+
+    }
+
+
+    .tsc_amenities {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+        row-gap: 32px;
+    }
+
+    .tsc_amenities_right {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    }
+
+    .tsc_heading {
+        margin-bottom: 20px;
+    }
 }
